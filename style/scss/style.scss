@@ -1,0 +1,317 @@
+:root {
+    --black-color: #222222;
+    --pink-color: #F16D7F;
+    --pink-background: #F1E4E6;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0)
+}
+
+body {
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+
+.header {
+    background-color: var(--black-color);
+
+
+    &__container {
+        display: flex;
+        min-height: 75px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        margin: 0 41px 0 0;
+    }
+
+    &__button {
+        background-color: transparent;
+        border: none;
+    }
+    
+    &__button:hover, 
+    &__button:focus {
+        opacity: .8;
+    }
+    
+    &__button:active {
+        opacity: .5;
+    }
+    
+    &__menu-list,
+    &__logo-container {
+        display: flex;
+        align-items: center;
+    }
+    
+    &__menu-item:not(:last-of-type) {
+        margin: 0 34px 0 0;
+    }
+    
+}
+
+
+.name {
+    display: flex;
+
+    &__header-span {
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 38px;
+        color: var(--pink-color);
+    }
+    
+    &__header {
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 58px;
+        text-transform: uppercase;
+    }
+    
+    &__content {
+        width: 100%;
+        padding: 335px 0 0 64px;
+        background-color: var(--pink-background);
+    }
+    
+    &__header {
+        position: relative;
+        padding: 0 0 0 28px;
+    }
+    
+    &__header::before{
+        position: absolute;
+        content: '';
+        width: 12px;
+        height: 100%;
+        background-color: var(--pink-color);
+        left: -12px;
+    }
+}
+
+
+
+
+.stock {
+    margin: 63px auto 0 auto;
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-content: space-between;
+        height: 470px;
+    }
+    
+    &__item {
+        width: 360px;
+        height: 260px;
+        background-image: url(../img/stock-women.jpg);
+        text-align: center;
+    }
+    
+    &__item-name {
+        margin-top: 105px;
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    
+    &__item-category {
+        color: #F16D7F;
+    }
+    
+    &__item--last &__item-name {
+        margin-top: 65px;
+    
+    }
+    
+    &__item--last {
+        width: 100%;
+        height: 180px;
+        background-image: url(../img/stock_item_accessories.png);
+    }
+
+}
+
+
+
+
+
+.fetured {
+    margin: 97px auto 0 auto;
+
+    
+    &__list {
+        display: flex;
+        align-content: space-between;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        height: 1192px;
+    }
+
+    &__item {
+        min-height: 581px;
+        min-width: 360px;
+
+    }
+
+    &__item-name {
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 16px;
+        color: #000000;
+        margin-left: 18px;
+        margin-top: 26px;
+    }
+
+    &__item-description {
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        color: #5D5D5D;
+        width: 315px;
+        margin-left: 18px;
+        margin-top: 13px;
+
+    }
+
+    &__item-price {
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        color: #F16D7F;
+        margin-left: 18px;
+        margin-top: 18px;
+    }
+
+    &__image {
+        width:"360px";
+        height:"420px";
+    }
+
+    &__browse-button {
+        margin: 49px auto 96px auto;
+        border: 1px solid #FF6A6A;
+        width: 211px;
+        height: 47px;
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        color: #F26376;
+        left: 38px;
+        right: 45.75%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    &__browse-button-text {
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        color: #F26376;
+        text-decoration: none;
+        /* TODO dodelat ssilku na vses DIV*/
+    }
+}
+
+.advantages {
+    background-color: #222224;
+
+        
+    &__wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        background-color: #222224;
+        height: 341px;
+    }
+
+
+    &__item {
+        background-position: 50% 103px;
+        width: 360px;
+        height: 341px;
+    }
+
+    &__item:nth-child(1) {
+        background: url("../img/icon_free_delivery.svg") no-repeat;
+        background-position: 160px 90px;
+    }
+
+    &__item:nth-child(2) {
+        background: url("../img/icon_discount.svg") no-repeat;
+        background-position: 160px 90px;
+    }
+
+    &__item:nth-child(3) {
+        background: url("../img/icon_crown.svg") no-repeat;
+        background-position: 160px 90px;
+    }
+
+
+    &__item p:nth-child(1) {
+        display: block;
+        padding-top: 163px;
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 19.96px;
+        line-height: 24px;
+        color: #FBFBFB;
+        text-align: center;
+    }
+
+    &__item p:nth-child(2) {
+        display: block;
+        padding-top: 5px;
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 13.972px;
+        line-height: 17px;
+        text-align: center;
+        color: #FBFBFB;
+    }
+
+}
+
