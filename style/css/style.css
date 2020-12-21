@@ -216,3 +216,13 @@ body {
     line-height: 17px;
     text-align: center;
     color: #FBFBFB; }
+  .advantages__item p:nth-child(3) {
+    display: block;
+    padding-top: 5px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13.972px;
+    line-height: 17px;
+    text-align: center;
+    color: #FBFBFB; }
