@@ -1,74 +1,9 @@
-:root {
-    --black-color: #222222;
-    --pink-color: #F16D7F;
-    --pink-background: #F1E4E6;
-}
-
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-    overflow: hidden;
-    border: 0;
-    clip: rect(0 0 0 0)
-}
-
-body {
-    /*font-family: 'Lato', 'Arial', sans-serif;
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 36px;*/
-}
-
-.container {
-    width: 1140px;
-    margin: 0 auto;
-}
-
-
-.header {
-    background-color: var(--black-color);
-
-
-    &__container {
-        display: flex;
-        min-height: 75px;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    &__logo {
-        margin: 0 41px 0 0;
-    }
-
-    &__button {
-        background-color: transparent;
-        border: none;
-    }
-    
-    &__button:hover, 
-    &__button:focus {
-        opacity: .8;
-    }
-    
-    &__button:active {
-        opacity: .5;
-    }
-    
-    &__menu-list,
-    &__logo-container {
-        display: flex;
-        align-items: center;
-    }
-    
-    &__menu-item:not(:last-of-type) {
-        margin: 0 34px 0 0;
-    }
-    
-}
+@import "variables";
+@import "common";
+@import "mixins";
+@import "block/header";
+@import "block/registration";
+@import "block/footer";
 
 
 .name {
@@ -79,7 +14,7 @@ body {
         font-style: normal;
         font-weight: 700;
         line-height: 38px;
-        color: var(--pink-color);
+        color: $pink-color;
     }
     
     &__header {
@@ -93,7 +28,7 @@ body {
     &__content {
         width: 100%;
         padding: 335px 0 0 64px;
-        background-color: var(--pink-background);
+        background-color: $pink-background;
     }
     
     &__header {
@@ -106,7 +41,7 @@ body {
         content: '';
         width: 12px;
         height: 100%;
-        background-color: var(--pink-color);
+        background-color: $pink-color;
         left: -12px;
     }
 }
@@ -144,7 +79,7 @@ body {
     }
     
     &__item-category {
-        color: #F16D7F;
+        color: $pink-color;
     }
     
     &__item--last &__item-name {
@@ -188,7 +123,7 @@ body {
         font-weight: normal;
         font-size: 13px;
         line-height: 16px;
-        color: #000000;
+        color: $black-color;
         margin-left: 18px;
         margin-top: 26px;
     }
@@ -212,7 +147,7 @@ body {
         font-weight: normal;
         font-size: 16px;
         line-height: 19px;
-        color: #F16D7F;
+        color: $pink-color;
         margin-left: 18px;
         margin-top: 18px;
     }
@@ -224,7 +159,7 @@ body {
 
     &__browse-button {
         margin: 49px auto 96px auto;
-        border: 1px solid #FF6A6A;
+        border: 1px solid $pink-color;
         width: 211px;
         height: 47px;
         font-family: Lato;
@@ -232,7 +167,7 @@ body {
         font-weight: normal;
         font-size: 16px;
         line-height: 19px;
-        color: #F26376;
+        color: $pink-color;
         left: 38px;
         right: 45.75%;
         display: flex;
@@ -248,7 +183,7 @@ body {
         font-weight: normal;
         font-size: 16px;
         line-height: 19px;
-        color: #F26376;
+        color: $pink-color;
         text-decoration: none;
         /* TODO dodelat ssilku na vses DIV*/
     }
@@ -326,117 +261,4 @@ body {
         color: #FBFBFB;
     }
 
-}
-
-.footer-up {
-
-    background: url("../../img/footer_background.jpg")  center 100% no-repeat;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -o-background-size: cover;
-    -moz-background-size: cover; 
-
-
-
-        &__wrap {
-            max-width: 1010px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: top;
-
-
-
-            .wrap__left-item {
-                width: 360px;
-                min-height: 225px;
-                background: url("../../img/footer-up__left_img1.png") no-repeat;
-                background-position: center;
-            }
-
-            .wrap__right-item {
-                min-width: 360px;
-                min-height: 225px;
-            }
-
-            .wrap__left-label {
-                font-family: 'Lato';
-                font-style: italic;
-                font-weight: 400;
-                font-size: 20px;
-                line-height: 24px;
-                text-align: center;
-                padding-top: 180px;    
-            }
-
-            .wrap__right-label-line1 {
-                font-family: 'Lato';
-                font-weight: 700;
-                font-size: 24px;
-                line-height: 37px;
-                text-align: center;
-                padding-top: 150px;    
-            }
-
-            .wrap__right-label-line2 {
-                font-family: 'Lato';
-                font-weight: 400;
-                font-size: 18px;
-                line-height: 24px;
-                text-align: center;
-            }
-
-            .wrap__right-input-email {
-
-                width: 290px;
-                height: 50px;
-                border-radius: 25px 0 0 25px;
-            }
-
-            .wrap__right-button-subscribe {
-                width: 90px;
-                height: 50px;
-                border-radius: 0 25px 25px 0;
-            }
-
-
-
-        }
-}
-
-.footer-down__wrap {
-    display: flex;
-    justify-content: space-between;
-    height: 79px;
-}
-
-
-.social {
-    display: flex;
-    justify-content: space-between;
-    height: 79px;
-}
-
-.social-icon1 {
-    height: 32px;
-    width: 32px;
-    background-color: #FFFFFF;
-}
-
-.social-icon2 {
-    height: 32px;
-    width: 32px;
-    background-color: #F16D7F;
-}
-
-.social-icon3 {
-    height: 32px;
-    width: 32px;
-    background-color: #FFFFFF;
-}
-
-.social-icon4 {
-    height: 32px;
-    width: 32px;
-    background-color: #FFFFFF;
 }

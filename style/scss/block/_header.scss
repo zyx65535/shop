@@ -1,0 +1,41 @@
+
+.header {
+    background-color: $black-color;
+
+
+    &__container {
+        display: flex;
+        min-height: 75px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        margin: 0 41px 0 0;
+    }
+
+    &__button {
+        background-color: transparent;
+        border: none;
+    }
+    
+    &__button:hover, 
+    &__button:focus {
+        opacity: .8;
+    }
+    
+    &__button:active {
+        opacity: .5;
+    }
+    
+    &__menu-list,
+    &__logo-container {
+        display: flex;
+        align-items: center;
+    }
+    
+    &__menu-item:not(:last-of-type) {
+        margin: 0 34px 0 0;
+    }
+    
+}
