@@ -1,0 +1,141 @@
+
+.registration-head {
+    background-color: $gray-bkg-color2;
+}
+
+.registration-head-wrap {
+
+    display:flex;
+    align-items: center;
+    min-height: 148px;
+
+    & h1 {
+        text-transform: uppercase;
+        font-weight: 400;        
+        font-size: 24px;
+        line-height: 29px;
+        font-style: normal;
+        color: $pink-color;
+    }
+}
+
+.registration-form-wrap {
+    display: flex;
+    align-items: center;
+    height: 675px;
+
+    
+    &__left {
+        height: inherit;
+        width: 100%;
+        color: #222;
+        }
+
+
+
+    &__right {
+        height: inherit;
+        width: 100%;
+    }
+
+}
+
+.registration-fieldset__legend {
+    margin-top: 20px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+
+}
+
+.registration-fieldset__firstName {
+    margin-top: 20px;
+    width: 360px;
+    height: 45px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.registration-fieldset__lastName {
+    margin-top: 20px;
+    width: 360px;
+    height: 45px;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.registration-fieldset__gender {
+    margin-top: 34px;
+    font-size: 11px;
+    line-height: 13px;
+}
+
+
+.registration-fieldset__LoginDetails {
+    display: block;
+    margin-top: 34px;
+    font-size: 16px;
+    line-height: 19px;
+
+}
+
+.registration-fieldset__email {
+    margin-top: 20px;
+    width: 360px;
+    height: 45px;
+}
+
+.registration-fieldset__password {
+    margin-top: 20px;
+    width: 360px;
+    height: 45px;
+}
+
+.registration-fieldset__details {
+    display: block;
+    margin-top: 15px;
+    width: 360px;
+    height: 45px;
+    line-height: 16px;
+    font-size: 13px;
+    color: #B1B1B1;
+}
+
+
+.registration-fieldset__button {
+    display: block;
+    margin-top: 39px;
+    width: 167px;
+    height: 50px;
+    background-color: $pink-color;
+    color: $white-color;
+    
+}
+
+
+.registration-form-wrap__right h2,h3,h4{
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 300;
+    margin-top: 20px;
+
+}
+
+.registration-form-wrap__right h2{
+    margin-top: 20px;
+
+}
+
+
+.registration-form-wrap__right h4::before {
+        content: "";
+        display:inline-block;
+        height:20px;
+        width:16px;
+        background-size: 20px 16px;
+        background-image: url("/img/Vector.jpg");
+        background-repeat: no-repeat;
+      
+    
+}

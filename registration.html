@@ -7,10 +7,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style/css/style.css">
+    <link rel="stylesheet" href="/style/css/style.css">
 </head>
+
+
 <body>
     <header class="header">
+        <div class=".visually-hidden">
+            <h1 class=".visually-hidden">Заголовок</h1>
+        </div>
         <div class="container header__container">
             <div class="header__logo-container">   
                 <a href="#"><img src="./img/logo.svg" alt="логотип" class="header__logo" width="44" height="38"></a>
@@ -43,99 +48,48 @@
             </ul>   
             </div>
     </header>
-    <main>
-        <section class="name">
-            <img class="name__img" src="./img/man-in-jacket.jpg" alt="мужчина в пальто" width="800" height="765">
-            <div class="name__content">
-                <h1 class="name__header">The brand<br><span class="name__header-span"> of luxxerious fashion</span></h1>
+
+    <section class="registration">
+        <div class="registration-head">
+            <div class="registration-head-wrap container">
+                <h1>registration</h1>
             </div>
-        </section>
+        </div>
 
-        <section class="stock container">
-            <h2 class="visually-hidden">Акции</h2>
-            <ul class="stock__list">
-                <li class="stock__item">
-                    <p class="stock__item-name">30% OFF</p>
-                    <p class="stock__item-category">FOR WOMEN</p>
-                </li>
-                <li class="stock__item">
-                    <p class="stock__item-name">HOT DEAL</p>
-                    <p class="stock__item-category">FOR MEN</p>
-                </li>
-                <li class="stock__item">
-                    <p class="stock__item-name">NEW ARRIVALS</p>
-                    <p class="stock__item-category">FOR KIDS</p>
-                </li>
-                <li class="stock__item stock__item--last">
-                    <p class="stock__item-name">LUXIROUS & TRENDY</p>
-                    <p class="stock__item-category">ACCESORIES</p>
-                </li>
-            </ul>     
-        </section>
+            <div class="registration-form-wrap container">
+                <form class="registration-form-wrap__left" action="#" method="GET" id="registration">
+                    <fieldset name=registration form="registration-fieldset">
+                        <h4 class="registration-fieldset__legend">Your Name</h4>
+                        <input type="text" name="firstName" placeholder="First Name" required="required" maxlength="20" class="registration-fieldset__firstName">
+                        <input type="text" name="lastName" placeholder="Last Name" required="required" maxlength="20" class="registration-fieldset__lastName">
+                        <br>
+                        <input type="radio" name="radio" id="radio1" required="required" class="registration-fieldset__gender">
+                        <label for="radio" class="registration-fieldset__gender">Male</label>
+                        <input type="radio" name="radio" id="radio2">
+                        <label for="radio" class="registration-fieldset__gender">Female</label>
+                        <label class="registration-fieldset__LoginDetails">Login details</label>
+                        <input type="email" name="email" required="required" placeholder="e-mail" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" autocomplete="email" 
+                        autofocus maxlength="30" class="registration-fieldset__email">
+                        <input type="password" name="password" required="required" placeholder="Password"  autofocus maxlength="30"  class="registration-fieldset__password">
+                        <br>
+                        <p class="registration-fieldset__details">Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters</p>
+                        <button type="submit" class="registration-fieldset__button">JOIN NOW    </button>
+                    </fieldset>
 
+                </form>
 
-        <section class="fetured container">
-            <ul class="fetured__list">
-                <li class="fetured__item">
-                    <img class="name__img" src="./img/fetured__item01.png" alt="fetured__item01" width="360" height="420">
-                    <p class="fetured__item-name">ELLERY X M'O CAPSULE</p>
-                    <p class="fetured__item-description">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                    <p class="fetured__item-price">$52.00</p>
-                </li>
-                <li class="fetured__item">
-                    <img src="./img/fetured__item02.png" alt="fetured__item02" class="fetured__image">
-                    <p class="fetured__item-name">ELLERY X M'O CAPSULE</p>
-                    <p class="fetured__item-description">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                    <p class="fetured__item-price">$52.00</p>
-                </li>
-                <li class="fetured__item">
-                    <img src="./img/fetured__item03.png" alt="fetured__item03" class="fetured__image">
-                    <p class="fetured__item-name">ELLERY X M'O CAPSULE</p>
-                    <p class="fetured__item-description">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                    <p class="fetured__item-price">$52.00</p>
-                </li>
-                <li class="fetured__item">
-                    <img src="./img/fetured__item04.png" alt="fetured__item04" class="fetured__image">
-                    <p class="fetured__item-name">ELLERY X M'O CAPSULE</p>
-                    <p class="fetured__item-description">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                    <p class="fetured__item-price">$52.00</p>
-                </li>
-                <li class="fetured__item">
-                    <img src="./img/fetured__item05.png" alt="fetured__item05" class="fetured__image">
-                    <p class="fetured__item-name">ELLERY X M'O CAPSULE</p>
-                    <p class="fetured__item-description">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                    <p class="fetured__item-price">$52.00</p>
-                </li>
-                <li class="fetured__item">
-                    <img src="./img/fetured__item06.png" alt="fetured__item06" class="fetured__image">
-                    <p class="fetured__item-name">ELLERY X M'O CAPSULE</p>
-                    <p class="fetured__item-description">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                    <p class="fetured__item-price">$52.00</p>
-                </li>
-            </ul>
-
-            <a href="#" class="fetured__browse-button-text"><div class="fetured__browse-button">Browse All Product</div></a>
-        </section>
-
-        <section class="advantages">
-            <div class="advantages__wrap container">
-                <div class="advantages__item">
-                    <p>Free Delivery</p>
-                    <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
-                </div>
-                <div class="advantages__item">
-                    <p>Sales & discounts</p>
-                    <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
-                </div>
-                <div class="advantages__item">
-                    <p>Quality assurance</p>
-                    <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+                <div class="registration-form-wrap__right">
+                    <h2>LOYALTY HAS ITS PERKS</h2>
+                    <h3>Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as soon as you join:</h3>
+                    <h4>15% off welcome offer</h4>
+                    <h4>Free shipping, returns and exchanges on all orders</h4>
+                    <h4>$10 off a purchase on your birthday</h4>
+                    <h4>Early access to products</h4>
+                    <h4>Exclusive offers & rewards</h4>
                 </div>
             </div>
-        </section>
-
-    </main>
-
+    </section>
+    
     <footer class="footer">
         <div class="footer-up">
                 <ul class="footer-up__wrap">
@@ -194,5 +148,7 @@
         </div>
 
     </footer>
+
 </body>
+
 </html>
