@@ -44,4 +44,32 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+<<<<<<< Updated upstream:style/css/reset.css
 }
+=======
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0)
+}
+
+body {
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+}
+
+.container {
+    max-width: 71.2%;
+    margin: 0 auto;
+}
+>>>>>>> Stashed changes:style/scss/_common.scss

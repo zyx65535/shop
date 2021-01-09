@@ -74,7 +74,7 @@ body {
 .name {
     display: flex;
 
-    &__header-span {
+    .name__header-span {
         font-size: 32px;
         font-style: normal;
         font-weight: 700;
@@ -82,7 +82,7 @@ body {
         color: var(--pink-color);
     }
     
-    &__header {
+    .name__header {
         font-size: 48px;
         font-style: normal;
         font-weight: 900;
@@ -90,17 +90,27 @@ body {
         text-transform: uppercase;
     }
     
-    &__content {
+    .name__content {
         width: 100%;
         padding: 335px 0 0 64px;
         background-color: var(--pink-background);
     }
     
-    &__header {
+    .name__header {
         position: relative;
         padding: 0 0 0 28px;
+
+        &::before{
+            position: absolute;
+            content: '';
+            width: 12px;
+            height: 100%;
+            background-color: $pink-color;
+            left: -12px;
+        }    
     }
     
+<<<<<<< Updated upstream
     &__header::before{
         position: absolute;
         content: '';
@@ -108,7 +118,14 @@ body {
         height: 100%;
         background-color: var(--pink-color);
         left: -12px;
+=======
+    .name__img {
+        min-width: 50%;
+        height: auto;
+        object-fit: cover;
+>>>>>>> Stashed changes
     }
+    
 }
 
 
@@ -117,22 +134,23 @@ body {
 .stock {
     margin: 63px auto 0 auto;
 
-    &__list {
+    .stock__list {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
         align-content: space-between;
-        height: 470px;
+        min-height: 470px;
     }
     
-    &__item {
-        width: 360px;
+    .stock__item {
+        width: 31.5%;   
         height: 260px;
-        background-image: url(../../img/stock-women.jpg);
+        background: url(../../img/stock-women.jpg) no-repeat;
+        background-size: contain;
         text-align: center;
     }
     
-    &__item-name {
+    .stock__item-name {
         margin-top: 105px;
         font-family: Lato;
         font-style: normal;
@@ -143,16 +161,21 @@ body {
         color: #FFFFFF;
     }
     
+<<<<<<< Updated upstream
     &__item-category {
         color: #F16D7F;
+=======
+    .stock__item-category {
+        color: $pink-color;
+>>>>>>> Stashed changes
     }
     
-    &__item--last &__item-name {
+    .stock__item--last &__item-name {
         margin-top: 65px;
     
     }
     
-    &__item--last {
+    .stock__item--last {
         width: 100%;
         height: 180px;
         background-image: url(../../img/stock_item_accessories.png);
@@ -168,7 +191,7 @@ body {
     margin: 97px auto 0 auto;
 
     
-    &__list {
+    .fetured__list {
         display: flex;
         align-content: space-between;
         justify-content: space-between;
@@ -176,13 +199,13 @@ body {
         height: 1192px;
     }
 
-    &__item {
+    .fetured__item {
         min-height: 581px;
         min-width: 360px;
 
     }
 
-    &__item-name {
+    .fetured__item-name {
         font-family: Lato;
         font-style: normal;
         font-weight: normal;
@@ -193,7 +216,7 @@ body {
         margin-top: 26px;
     }
 
-    &__item-description {
+    .fetured__item-description {
         font-family: Lato;
         font-style: normal;
         font-weight: 300;
@@ -206,7 +229,7 @@ body {
 
     }
 
-    &__item-price {
+    .fetured__item-price {
         font-family: Lato;
         font-style: normal;
         font-weight: normal;
@@ -217,12 +240,12 @@ body {
         margin-top: 18px;
     }
 
-    &__image {
+    .fetured__image {
         width:"360px";
         height:"420px";
     }
 
-    &__browse-button {
+    .fetured__browse-button {
         margin: 49px auto 96px auto;
         border: 1px solid #FF6A6A;
         width: 211px;
@@ -241,7 +264,7 @@ body {
     }
 
 
-    &__browse-button-text {
+    .fetured__browse-button-text {
         display: block;
         font-family: Lato;
         font-style: normal;
@@ -258,7 +281,7 @@ body {
     background-color: #222224;
 
         
-    &__wrap {
+    .advantages__wrap {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -268,29 +291,29 @@ body {
     }
 
 
-    &__item {
+    .advantages__item {
         background-position: 50% 103px;
         width: 360px;
         height: 341px;
     }
 
-    &__item:nth-child(1) {
+    .advantages__item:nth-child(1) {
         background: url("../../img/icon_free_delivery.svg") no-repeat;
         background-position: 160px 90px;
     }
 
-    &__item:nth-child(2) {
+    .advantages__item:nth-child(2) {
         background: url("../../img/icon_discount.svg") no-repeat;
         background-position: 160px 90px;
     }
 
-    &__item:nth-child(3) {
+    .advantages__item:nth-child(3) {
         background: url("../../img/icon_crown.svg") no-repeat;
         background-position: 160px 90px;
     }
 
 
-    &__item p:nth-child(1) {
+    .advantages__item p:nth-child(1) {
         display: block;
         padding-top: 163px;
         font-family: Lato;
@@ -302,7 +325,7 @@ body {
         text-align: center;
     }
 
-    &__item p:nth-child(2) {
+    .advantages__item p:nth-child(2) {
         display: block;
         padding-top: 5px;
         font-family: Lato;
@@ -314,7 +337,7 @@ body {
         color: #FBFBFB;
     }
 
-    &__item p:nth-child(3) {
+    .advantages__item p:nth-child(3) {
         display: block;
         padding-top: 5px;
         font-family: Lato;

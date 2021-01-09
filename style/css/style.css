@@ -21,6 +21,7 @@ body {
     line-height: 36px;*/ }
 
 .container {
+<<<<<<< Updated upstream
   width: 1140px;
   margin: 0 auto; }
 
@@ -45,6 +46,79 @@ body {
     align-items: center; }
   .header__menu-item:not(:last-of-type) {
     margin: 0 34px 0 0; }
+=======
+  max-width: 71.2%;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #222222;
+}
+
+.header__container {
+  display: flex;
+  min-height: 75px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__logo {
+  margin: 0 41px 0 0;
+}
+
+.header__button {
+  background-color: transparent;
+  border: none;
+}
+
+.header__button:hover, .header__button:focus {
+  opacity: .8;
+}
+
+.header__button:active {
+  opacity: .5;
+}
+
+.header__menu-list, .header__logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.header__menu-item:not(:last-of-type) {
+  margin: 0 34px 0 0;
+}
+
+.registration-head {
+  background-color: #F5F5F5;
+}
+
+.registration-head-wrap {
+  display: flex;
+  align-items: center;
+  min-height: 148px;
+}
+
+.registration-head-wrap h1 {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  font-style: normal;
+  color: #F16D7F;
+}
+
+.registration-form-wrap {
+  display: flex;
+  align-items: center;
+  height: 675px;
+}
+
+.registration-form-wrap__left {
+  height: inherit;
+  width: 100%;
+  color: #222;
+}
+>>>>>>> Stashed changes
 
 .name {
   display: flex; }
@@ -233,6 +307,7 @@ body {
   background-size: cover;
   -webkit-background-size: cover;
   -o-background-size: cover;
+<<<<<<< Updated upstream
   -moz-background-size: cover; }
   .footer-up__wrap {
     max-width: 1010px;
@@ -287,23 +362,403 @@ body {
   display: flex;
   justify-content: space-between;
   height: 79px; }
+=======
+  -moz-background-size: cover;
+}
+
+.footer-up .footer-up__wrap {
+  max-width: 1010px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+}
+
+.footer-up .footer-up__wrap .wrap__left-item {
+  width: 360px;
+  min-height: 225px;
+  background: url("../../img/footer-up__left_img1.png") no-repeat;
+  background-position: center;
+}
+
+.footer-up .footer-up__wrap .wrap__right-item {
+  min-width: 360px;
+  min-height: 225px;
+}
+
+.footer-up .footer-up__wrap .wrap__left-label {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  padding-top: 180px;
+}
+
+.footer-up .footer-up__wrap .wrap__right-label-line1 {
+  font-family: 'Lato';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 37px;
+  text-align: center;
+  padding-top: 150px;
+}
+
+.footer-up .footer-up__wrap .wrap__right-label-line2 {
+  font-family: 'Lato';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.footer-up .footer-up__wrap .wrap__right-input-email {
+  width: 290px;
+  height: 50px;
+  border-radius: 25px 0 0 25px;
+}
+
+.footer-up .footer-up__wrap .wrap__right-button-subscribe {
+  width: 90px;
+  height: 50px;
+  border-radius: 0 25px 25px 0;
+}
+
+.footer-down {
+  background-color: #222222;
+}
+
+.footer-down__wrap {
+  display: flex;
+  justify-content: space-between;
+  height: 79px;
+}
+
+.wrapDWN__left-item {
+  display: flex;
+  align-items: center;
+}
+
+.wrapDWN__left-item h3 {
+  font-weight: 400;
+  line-height: 19;
+  font-size: 16px;
+  color: #FFF;
+}
+
+.social {
+  height: 79px;
+  width: 200px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+>>>>>>> Stashed changes
 
 .social-icon1 {
   height: 32px;
   width: 32px;
+<<<<<<< Updated upstream
   background-color: #FFFFFF; }
+=======
+  background-color: #FFF;
+}
+
+.social-icon1 img {
+  align-items: center;
+}
+>>>>>>> Stashed changes
 
 .social-icon2 {
   height: 32px;
   width: 32px;
+<<<<<<< Updated upstream
   background-color: #F16D7F; }
+=======
+  background-color: #F16D7F;
+  display: flex;
+}
+
+.social-icon2 img {
+  margin: auto auto;
+}
+>>>>>>> Stashed changes
 
 .social-icon3 {
   height: 32px;
   width: 32px;
+<<<<<<< Updated upstream
   background-color: #FFFFFF; }
+=======
+  background-color: #FFF;
+  display: flex;
+}
+
+.social-icon3 img {
+  margin: auto auto;
+}
+>>>>>>> Stashed changes
 
 .social-icon4 {
   height: 32px;
   width: 32px;
+<<<<<<< Updated upstream
   background-color: #FFFFFF; }
+=======
+  background-color: #FFF;
+  display: flex;
+}
+
+.social-icon4 img {
+  margin: auto auto;
+}
+
+.name {
+  display: flex;
+}
+
+.name .name__header-span {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 38px;
+  color: #F16D7F;
+}
+
+.name .name__header {
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 58px;
+  text-transform: uppercase;
+}
+
+.name .name__content {
+  width: 100%;
+  padding: 335px 0 0 64px;
+  background-color: #F1E4E6;
+}
+
+.name .name__header {
+  position: relative;
+  padding: 0 0 0 28px;
+}
+
+.name .name__header::before {
+  position: absolute;
+  content: '';
+  width: 12px;
+  height: 100%;
+  background-color: #F16D7F;
+  left: -12px;
+}
+
+.name .name__img {
+  min-width: 50%;
+  height: auto;
+  object-fit: cover;
+}
+
+.stock {
+  margin: 63px auto 0 auto;
+}
+
+.stock .stock__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: space-between;
+  min-height: 470px;
+}
+
+.stock .stock__item {
+  width: 31.5%;
+  height: 260px;
+  background: url(../../img/stock-women.jpg) no-repeat;
+  background-size: contain;
+  text-align: center;
+}
+
+.stock .stock__item-name {
+  margin-top: 105px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.stock .stock__item-category {
+  color: #F16D7F;
+}
+
+.stock__item--last .stock__item-name {
+  margin-top: 65px;
+}
+
+.stock .stock__item--last {
+  width: 100%;
+  height: 180px;
+  background-image: url(../../img/stock_item_accessories.png);
+}
+
+.fetured {
+  margin: 97px auto 0 auto;
+}
+
+.fetured .fetured__list {
+  display: flex;
+  align-content: space-between;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 1192px;
+}
+
+.fetured .fetured__item {
+  min-height: 581px;
+  min-width: 360px;
+}
+
+.fetured .fetured__item-name {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
+  color: #222222;
+  margin-left: 18px;
+  margin-top: 26px;
+}
+
+.fetured .fetured__item-description {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #5D5D5D;
+  width: 315px;
+  margin-left: 18px;
+  margin-top: 13px;
+}
+
+.fetured .fetured__item-price {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #F16D7F;
+  margin-left: 18px;
+  margin-top: 18px;
+}
+
+.fetured .fetured__image {
+  width: "360px";
+  height: "420px";
+}
+
+.fetured .fetured__browse-button {
+  margin: 49px auto 96px auto;
+  border: 1px solid #F16D7F;
+  width: 211px;
+  height: 47px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #F16D7F;
+  left: 38px;
+  right: 45.75%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fetured .fetured__browse-button-text {
+  display: block;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #F16D7F;
+  text-decoration: none;
+  /* TODO dodelat ssilku na vses DIV*/
+}
+
+.advantages {
+  background-color: #222224;
+}
+
+.advantages .advantages__wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  background-color: #222224;
+  height: 341px;
+}
+
+.advantages .advantages__item {
+  background-position: 50% 103px;
+  width: 360px;
+  height: 341px;
+}
+
+.advantages .advantages__item:nth-child(1) {
+  background: url("../../img/icon_free_delivery.svg") no-repeat;
+  background-position: 160px 90px;
+}
+
+.advantages .advantages__item:nth-child(2) {
+  background: url("../../img/icon_discount.svg") no-repeat;
+  background-position: 160px 90px;
+}
+
+.advantages .advantages__item:nth-child(3) {
+  background: url("../../img/icon_crown.svg") no-repeat;
+  background-position: 160px 90px;
+}
+
+.advantages .advantages__item p:nth-child(1) {
+  display: block;
+  padding-top: 163px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 19.96px;
+  line-height: 24px;
+  color: #FBFBFB;
+  text-align: center;
+}
+
+.advantages .advantages__item p:nth-child(2) {
+  display: block;
+  padding-top: 5px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13.972px;
+  line-height: 17px;
+  text-align: center;
+  color: #FBFBFB;
+}
+
+.advantages .advantages__item p:nth-child(3) {
+  display: block;
+  padding-top: 5px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13.972px;
+  line-height: 17px;
+  text-align: center;
+  color: #FBFBFB;
+}
+/*# sourceMappingURL=style.css.map */
+>>>>>>> Stashed changes
