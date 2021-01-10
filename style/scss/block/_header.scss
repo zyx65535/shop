@@ -3,20 +3,27 @@
     background-color: $black-color;
 
 
-    &__container {
+    .header__menu-item:nth-child(2), .header__menu-item:nth-child(3) {
+                
+        @media (max-width: 375px) {
+            display:none;
+        }
+    }
+
+    .header__container {
         display: flex;
         min-height: 75px;
         align-items: center;
         justify-content: space-between;
     }
 
-    &__logo {
+    .header__logo {
         margin: 0 41px 0 0;
     }
 
-    &__button {
+    .header__button {
         background-color: transparent;
-        border: none;
+        border: none;  
     }
     
     &__button:hover, 
@@ -28,14 +35,30 @@
         opacity: .5;
     }
     
-    &__menu-list,
-    &__logo-container {
+    .header__menu-list,
+    .header__logo-container {
         display: flex;
         align-items: center;
     }
     
-    &__menu-item:not(:last-of-type) {
+
+
+    .header__menu-item:not(:last-of-type) {
         margin: 0 34px 0 0;
+
+        @media (max-width: 768px) {
+            margin: 0 25px 0 0;
+        }
+
+
+    
+        .header__menu-item::nth-child(1) {
+            @media (max-width: 375px) {
+                margin: 0 16px 0 0;
+            }
+        }
+
     }
     
 }
+
