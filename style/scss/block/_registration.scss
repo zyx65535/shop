@@ -55,6 +55,7 @@
     font-weight: 300;
     font-size: 16px;
     line-height: 19px;
+    text-indent: 15px;
 }
 
 .registration-fieldset__lastName {
@@ -63,6 +64,7 @@
     height: 45px;
     font-size: 16px;
     line-height: 19px;
+    text-indent: 15px;
 }
 
 .registration-fieldset__gender {
@@ -84,12 +86,14 @@
     margin-top: 20px;
     width: 360px;
     height: 45px;
+    text-indent: 15px;
 }
 
 .registration-fieldset__password {
     margin-top: 20px;
     width: 360px;
     height: 45px;
+    text-indent: 15px;
 }
 
 .registration-fieldset__details {
@@ -111,6 +115,10 @@
     background-color: $pink-color;
     color: $white-color;
     
+    &:hover {
+        background-color: $white-color;
+        color: $pink-color;
+    }
 }
 
 
@@ -136,6 +144,4 @@
         background-size: 20px 16px;
         background-image: url("/img/Vector.jpg");
         background-repeat: no-repeat;
-      
-    
 }
