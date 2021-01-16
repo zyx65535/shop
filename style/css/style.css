@@ -223,7 +223,7 @@ body {
   opacity: .7;
 }
 
-.registration-fieldset__lastName {
+.registration-fieldset__lastname {
   margin-top: 20px;
   width: 360px;
   height: 45px;
@@ -233,12 +233,12 @@ body {
   text-indent: 13px;
 }
 
-.registration-fieldset__lastName:active {
+.registration-fieldset__lastname:active {
   outline: 5px solid #F16D7F;
   opacity: .7;
 }
 
-.registration-fieldset__lastName:hover {
+.registration-fieldset__lastname:hover {
   outline: 5px solid #F16D7F;
   opacity: .7;
 }
@@ -249,7 +249,7 @@ body {
   line-height: 13px;
 }
 
-.registration-fieldset__LoginDetails {
+.registration-fieldset__Logindetails {
   display: block;
   margin-top: 34px;
   font-size: 16px;
