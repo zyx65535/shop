@@ -16,7 +16,7 @@
 <body>
     <header class="header">
         <div class="visually-hidden">
-            <h1 class="visually-hidden">Заголовок</h1>
+            <h2 class="visually-hidden">Заголовок</h2>
         </div>
         <div class="container header__container">
             <div class="header__logo-container">   
@@ -60,19 +60,19 @@
 
             <div class="registration-form-wrap container">
                 <form class="registration-form-wrap__left" action="#" method="GET" id="registration">
-                    <fieldset name=registration form="registration-fieldset" class="registration-fieldset">
+                    <fieldset name=registration form="registration" class="registration-fieldset">
                         <h4 class="registration-fieldset__legend">Your Name</h4>
                         <input type="text" name="firstName" placeholder="First Name" required="required" maxlength="20" class="registration-fieldset__firstname">
                         <input type="text" name="lastName" placeholder="Last Name" required="required" maxlength="20" class="registration-fieldset__lastname">
                         <br>
                         <input type="radio" name="radio" id="radio1" required="required" class="registration-fieldset__gender">
-                        <label for="radio" class="registration-fieldset__gender">Male</label>
+                        <label for="radio1" class="registration-fieldset__gender">Male</label>
                         <input type="radio" name="radio" id="radio2">
-                        <label for="radio" class="registration-fieldset__gender">Female</label>
+                        <label for="radio2" class="registration-fieldset__gender">Female</label>
                         <label class="registration-fieldset__logindetails">Login details</label>
                         <input type="email" name="email" required="required" placeholder="Email" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" autocomplete="email" 
                         autofocus maxlength="30" class="registration-fieldset__email">
-                        <input type="password" name="password" required="required" placeholder="Password"  autofocus maxlength="30"  class="registration-fieldset__password">
+                        <input type="password" name="password" required="required" placeholder="Password"  maxlength="30"  class="registration-fieldset__password">
                         <br>
                         <p class="registration-fieldset__details">Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters</p>
                         <button type="submit" class="registration-fieldset__button">JOIN NOW    </button>
