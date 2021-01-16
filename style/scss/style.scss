@@ -169,6 +169,18 @@
         justify-content: center;
         flex-direction: column;
 
+
+        &:active {
+            outline: 5px solid $pink-color;
+            opacity: .7;
+        }
+
+        &:hover {
+            outline: 5px solid $pink-color;
+            opacity: .7;
+        }
+
+
         @media (max-width: 768px) { 
             margin-top: 19px;
             min-height: 167px;
@@ -216,7 +228,7 @@
     .stock__item--last {
         min-width: 100%;
         max-height: 180px;
-        background: url('../../img/stock_item_accessories.png') no-repeat;
+        background: url('../../img/stock_item_accessories.jpg') no-repeat;
         background-size: cover;
         margin-top: 65px;
 
@@ -263,13 +275,15 @@
     .fetured__list {
         margin-top: 97px;
         display: flex;
-        align-content: space-between;
-        justify-content: space-between;
+        align-content: center;
+        justify-content: space-around;
         flex-wrap: wrap;
         min-height: 1192px;
 
         @media (max-width: 768px) { 
             margin: 72px auto 0 auto;
+            justify-content: space-around;
+
         }
 
         @media (max-width: 375px) { 
@@ -284,58 +298,59 @@
         min-height: 581px;
         min-width: 360px;
         background-color: $gray-bkg-color2;
+        justify-self: space-around;
 
 
         &:nth-child(1) {
-            background: url("/img/fetured__item01.png") no-repeat, rgba(245, 245, 245, .65) no-repeat;
+            background: url("/img/fetured__item01.jpg") no-repeat, rgba(245, 245, 245, .65) no-repeat;
 
             &:hover {
-                    background: url("/img/fetured__item01.png") no-repeat, rgba(0, 0, 0, .65) no-repeat;
+                    background: url("/img/fetured__item01.jpg") no-repeat, rgba(0, 0, 0, .65) no-repeat;
                     background-blend-mode: darken;
                 }
         }
 
         &:nth-child(2) {
-            background: url("/img/fetured__item02.png") no-repeat, rgba(245, 245, 245, .65) no-repeat;
+            background: url("/img/fetured__item02.jpg") no-repeat, rgba(245, 245, 245, .65) no-repeat;
 
             &:hover {
-                    background: url("/img/fetured__item02.png") no-repeat, rgba(0, 0, 0, .65) no-repeat;
+                    background: url("/img/fetured__item02.jpg") no-repeat, rgba(0, 0, 0, .65) no-repeat;
                     background-blend-mode: darken;
                 }
         }
 
         &:nth-child(3) {
-            background: url("/img/fetured__item03.png") no-repeat, rgba(245, 245, 245, .65) no-repeat;
+            background: url("/img/fetured__item03.jpg") no-repeat, rgba(245, 245, 245, .65) no-repeat;
 
             &:hover {
-                    background: url("/img/fetured__item03.png") no-repeat, rgba(0, 0, 0, .65) no-repeat;
+                    background: url("/img/fetured__item03.jpg") no-repeat, rgba(0, 0, 0, .65) no-repeat;
                     background-blend-mode: darken;
                 }
         }
 
         &:nth-child(4) {
-            background: url("/img/fetured__item04.png") no-repeat, rgba(245, 245, 245, .65) no-repeat;
+            background: url("/img/fetured__item04.jpg") no-repeat, rgba(245, 245, 245, .65) no-repeat;
 
             &:hover {
-                    background: url("/img/fetured__item04.png") no-repeat, rgba(0, 0, 0, .65) no-repeat;
+                    background: url("/img/fetured__item04.jpg") no-repeat, rgba(0, 0, 0, .65) no-repeat;
                     background-blend-mode: darken;
                 }
         }
 
         &:nth-child(5) {
-            background: url("/img/fetured__item05.png") no-repeat, rgba(245, 245, 245, .65) no-repeat;
+            background: url("/img/fetured__item05.jpg") no-repeat, rgba(245, 245, 245, .65) no-repeat;
 
             &:hover {
-                    background: url("/img/fetured__item05.png") no-repeat, rgba(0, 0, 0, .65) no-repeat;
+                    background: url("/img/fetured__item05.jpg") no-repeat, rgba(0, 0, 0, .65) no-repeat;
                     background-blend-mode: darken;
                 }
         }
 
         &:nth-child(6) {
-            background: url("/img/fetured__item06.png") no-repeat, rgba(245, 245, 245, .65) no-repeat;
+            background: url("/img/fetured__item06.jpg") no-repeat, rgba(245, 245, 245, .65) no-repeat;
 
             &:hover {
-                    background: url("/img/fetured__item06.png") no-repeat, rgba(0, 0, 0, .65) no-repeat;
+                    background: url("/img/fetured__item06.jpg") no-repeat, rgba(0, 0, 0, .65) no-repeat;
                     background-blend-mode: darken;
                 }
         }
@@ -398,6 +413,15 @@
         align-items: center;
         justify-content: center;
 
+        &:active {
+            outline: 5px solid $black-color;
+            opacity: .7;
+        }
+
+        &:focus {
+            outline: 5px solid $black-color;
+        }
+
         @media (max-width: 768px) { 
             margin: 33px auto 65px auto;
         }
@@ -458,7 +482,8 @@
     .advantages__item {
         background-position: 50% 103px;
         width: 360px;
-        height: 341px;
+        min-height: 341px;
+        align-self: center;
 
 
         @media (max-width: 768px) {
@@ -472,46 +497,41 @@
 
     .advantages__item:nth-child(1) {
         background: url("../../img/icon_free_delivery.svg") no-repeat;
-        background-position: 160px 90px;
+        background-position: center 90px;
 
 
         @media (max-width: 768px) {
             background-position: center 0;
         }
 
-        // @media (max-width: 375px) {
-        //     background-position: center 0;
-        // }
+
     }
 
     .advantages__item:nth-child(2) {
         background: url("../../img/icon_discount.svg") no-repeat;
-        background-position: 160px 90px;
+        background-position: center 90px;
 
         @media (max-width: 768px) {
             background-position: center 0;
         }
 
-        // @media (max-width: 375px) {
-        //     background-position: center 0;
-        // }
+
 
     }
 
     .advantages__item:nth-child(3) {
         background: url("../../img/icon_crown.svg") no-repeat;
-        background-position: 160px 90px;
+        background-position: center 90px;
 
         @media (max-width: 768px) {
             background-position: center 0;
         }
         
-        // @media (max-width: 375px) {
-        //     background-position: center 0;
-        // }
     }
 
     .advantages__item>p:first-child {
+        margin-top: 163px;
+
         @media (max-width: 768px) {
             margin-top: 55px;
         }

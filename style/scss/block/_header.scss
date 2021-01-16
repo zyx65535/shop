@@ -19,6 +19,15 @@
 
     .header__logo {
         margin: 0 41px 0 0;
+
+        &:active {
+            outline: 5px solid $pink-color;
+            opacity: .7;
+        }
+
+        &:focus {
+            outline: 5px solid $pink-color;
+        }
     }
 
     .header__button {
