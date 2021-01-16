@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8" lang="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="viewport" content="width=device-width">
-    <title>Project</title>
+    <title>shop</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/css/normalize.css">
+    <link rel="stylesheet" href="style/css/reset.css">
     <link rel="stylesheet" href="/style/css/style.css">
 </head>
 
@@ -58,7 +60,7 @@
 
             <div class="registration-form-wrap container">
                 <form class="registration-form-wrap__left" action="#" method="GET" id="registration">
-                    <fieldset name=registration form="registration-fieldset">
+                    <fieldset name=registration form="registration-fieldset" class="registration-fieldset">
                         <h4 class="registration-fieldset__legend">Your Name</h4>
                         <input type="text" name="firstName" placeholder="First Name" required="required" maxlength="20" class="registration-fieldset__firstName">
                         <input type="text" name="lastName" placeholder="Last Name" required="required" maxlength="20" class="registration-fieldset__lastName">
@@ -91,6 +93,7 @@
     </section>
     
     <footer class="footer">
+        <h2 class="visually-hidden">footer</h2>
         <div class="footer-up">
                 <ul class="footer-up__wrap">
                     <li class="wrap__left-item">
@@ -99,54 +102,51 @@
                     <li class="wrap__right-item">
                         <p class="wrap__right-label-line1">SUBSCRIBE</p>
                         <p class="wrap__right-label-line2">FOR OUR NEWLETTER AND PROMOTION</p>
-                        <form action="#">
+                        <form action="#" class="wrap__form">
                             <input class="wrap__right-input-email" type="text" placeholder="Enter Your Email">
-                            <input class="wrap__right-button-subscribe" type="submit"  title="Subscribe">
+                            <button class="wrap__right-button-subscribe" type="submit">Subscribe</button>
                         </form>
                     </li>
                     
                 </ul>
         </div>
 
-        <div class="footer-down">
-            <div class="footer-down__wrap container">
-                <div class="wrapDWN__left-item">
-                    <h3>© 2021 Brand All Rights Reserved.</h3>
+                <div class="footer-down">
+                    <div class="footer-down__wrap container">
+                        <h3 class="footer-wrap__left-item">© 2021 Brand All Rights Reserved.</h3>
+                        
+        
+                        <div class="footer-wrap__right-item">
+                            <ul class="social container">
+                                
+                                    <li class="social-icon1">
+                                        <a href="#">
+                                            <img src="img/icon_social_f.png" alt="facebook" height="32" width="32">
+                                        </a>
+                                    </li>
+                                
+                                    <li class="social-icon2">
+                                        <a href="#">
+                                            <img src="img/icon_social_insta.png" alt="instagram" height="15" width="15">
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="social-icon3">
+                                        <a href="#">
+                                            <img src="img/icon_social_p.png" alt="p" height="15" width="15">
+                                        </a>
+                                    </li>
+        
+                                    <li class="social-icon4">
+                                        <a href="#">
+                                            <img src="img/icon_social_twitter.png" alt="twitter" height="15" width="15">
+                                        </a>
+                                    </li>
+        
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="wrapDWN__right-item">
-                    <ul class="social container">
-                        
-                        <a href="#">
-                            <li class="social-icon1">
-                                <img src="img/icon_social_f.png" alt="1" height="32" width="32">
-                            </li>
-                        </a>
-                        
-                        <a href="#">
-                            <li class="social-icon2">
-                                <img src="img/icon_social_insta.png" alt="1" height="15" width="15">
-                            </li>
-                        </a>
-                        
-                        <a href="#">    
-                            <li class="social-icon3">
-                                <img src="img/icon_social_p.png" alt="1" height="15" width="15">
-                            </li>
-                        </a>
-
-                        <a href="#">
-                            <li class="social-icon4">
-                                <img src="img/icon_social_twitter.png" alt="1" height="15" width="15">
-                            </li>
-                        </a>
-
-
-                    </ul>
-                </div>
-            </div>
-        </div>
-
     </footer>
 
 </body>

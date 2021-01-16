@@ -9,6 +9,11 @@
     align-items: center;
     min-height: 148px;
 
+    
+    @media (max-width: 768px) {
+        justify-content: space-around;
+    }
+
     & h1 {
         text-transform: uppercase;
         font-weight: 400;        
@@ -16,14 +21,19 @@
         line-height: 29px;
         font-style: normal;
         color: $pink-color;
+
     }
 }
 
 .registration-form-wrap {
     display: flex;
     align-items: center;
-    height: 675px;
+    min-height: 675px;
 
+    
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
     
     &__left {
         height: inherit;
@@ -40,11 +50,38 @@
 
 }
 
+.registration-fieldset {
+    
+    @media (max-width: 768px) {
+        margin-top: 40px;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+.registration-form-wrap__left {
+    
+    @media (max-width: 768px) {
+        margin-top: 40px;
+        align-items: center;
+    }
+}
+
 .registration-fieldset__legend {
-    margin-top: 20px;
+    margin-top: 64px;
     font-weight: 300;
     font-size: 16px;
     line-height: 19px;
+
+    @media (max-width: 768px) {
+        align-self: center;
+    }
+
+    @media (max-width: 375px) {
+        margin-top: 41px;
+        margin: 0 auto;
+    }
+
 
 }
 
@@ -53,18 +90,41 @@
     width: 360px;
     height: 45px;
     font-weight: 300;
-    font-size: 16px;
-    line-height: 19px;
-    text-indent: 15px;
+    font-size: 13px;
+    line-height: 16px;
+    text-indent: 13px;
+
+    &:active {
+        outline: 5px solid $pink-color;
+        opacity: .7;
+    }
+
+    &:hover {
+        outline: 5px solid $pink-color;
+        opacity: .7;
+    }
+
+
 }
 
 .registration-fieldset__lastName {
     margin-top: 20px;
     width: 360px;
     height: 45px;
-    font-size: 16px;
-    line-height: 19px;
-    text-indent: 15px;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    text-indent: 13px;
+
+    &:active {
+        outline: 5px solid $pink-color;
+        opacity: .7;
+    }
+
+    &:hover {
+        outline: 5px solid $pink-color;
+        opacity: .7;
+    }
 }
 
 .registration-fieldset__gender {
@@ -87,6 +147,21 @@
     width: 360px;
     height: 45px;
     text-indent: 15px;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    text-indent: 13px;
+
+    &:active {
+        outline: 5px solid $pink-color;
+        opacity: .7;
+    }
+
+    &:hover {
+        outline: 5px solid $pink-color;
+        opacity: .7;
+    }
+
 }
 
 .registration-fieldset__password {
@@ -94,6 +169,21 @@
     width: 360px;
     height: 45px;
     text-indent: 15px;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    text-indent: 13px;
+
+    &:active {
+        outline: 5px solid $pink-color;
+        opacity: .7;
+    }
+
+    &:hover {
+        outline: 5px solid $pink-color;
+        opacity: .7;
+    }
+
 }
 
 .registration-fieldset__details {
@@ -114,6 +204,12 @@
     height: 50px;
     background-color: $pink-color;
     color: $white-color;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+
     
     &:hover {
         background-color: $white-color;
@@ -127,11 +223,28 @@
     line-height: 29px;
     font-weight: 300;
     margin-top: 20px;
+    padding-left: 20px;
+
+    @media (max-width: 768px) {
+        font-size: 16px;
+    }
+
+    @media (max-width: 375px) {
+        font-size: 16px;
+    }
 
 }
 
 .registration-form-wrap__right h2{
-    margin-top: 20px;
+    margin-top: 64px;
+
+    @media (max-width: 768px) {
+        margin-top: 40px;
+    }
+
+    @media (max-width: 375px) {
+        margin-top: 41px;
+    }
 
 }
 
@@ -145,3 +258,15 @@
         background-image: url("/img/Vector.jpg");
         background-repeat: no-repeat;
 }
+
+
+
+.registration-form-wrap__right h4 {
+        
+        @media (max-width: 375px) {
+            margin-bottom: 41px;
+        }
+
+}
+
+
