@@ -742,6 +742,20 @@ body {
   outline: 1px solid #F16D7F;
 }
 
+.carousel-item {
+  background-color: #F8F3F4;
+}
+
+.new-arrivals__wrp {
+  min-height: 148px;
+  background-color: #F8F3F4;
+}
+
+.new-arrivals__up {
+  min-height: 148px;
+  background-color: #F8F3F4;
+}
+
 .name {
   display: -webkit-box;
   display: -ms-flexbox;
