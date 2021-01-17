@@ -503,7 +503,6 @@ body {
 .footer-up .footer-up__wrap .wrap__right-button-subscribe {
   padding: 0 0 0 20px;
   width: 100px;
-  height: 56px;
   border-radius: 0 25px 25px 0;
   border-left-width: 0;
   margin-left: -5px;
@@ -754,6 +753,130 @@ body {
 .new-arrivals__up {
   min-height: 148px;
   background-color: #F8F3F4;
+}
+
+.carousel-item img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.new-arrivals__text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+  color: #F16D7F;
+}
+
+.breadcrumb-item {
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 300;
+}
+
+.breadcrumb > li > a {
+  text-decoration: none;
+  color: #636363;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+}
+
+.breadcrumb > li:last-child {
+  color: #F16D7F;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+}
+
+.women-collection {
+  min-height: 601px;
+}
+
+.collection_rectangle {
+  display: block;
+  margin: 12px auto 12px auto;
+}
+
+.collection_rectangle2 {
+  display: block;
+  margin: 12px auto 12px auto;
+}
+
+.women-collection__h2 {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #F16D7F;
+  text-transform: uppercase;
+  display: block;
+  height: 17px;
+  width: 555px;
+  margin: 65px auto 0 auto;
+  padding: 0 0 0 0;
+  text-align: center;
+}
+
+.women-collection__h3 {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  color: #636363;
+  text-transform: uppercase;
+  display: block;
+  height: 50px;
+  width: 555px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.women-collection__h4 {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #636363;
+  display: block;
+  height: 52px;
+  width: 555px;
+  margin: 48px auto 0 auto;
+  text-align: center;
+}
+
+.women-collection__price {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #F16D7F;
+  display: block;
+  height: 51px;
+  width: 555px;
+  margin: 32px auto 0 auto;
+  text-align: center;
+}
+
+.dropdown__button {
+  background-color: unset;
+  color: black;
+  border: none;
+}
+
+.dropdown_wrp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .name {
